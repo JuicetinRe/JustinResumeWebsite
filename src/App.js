@@ -19,6 +19,7 @@ function App() {
         <Route exact path ="/" element = {<Home />} />
         <Route path = "/about" element = {<About/>}></Route>
         <Route path = "/resume" element = {<Resume/>}></Route>
+        
       </Routes>
       </div>
       {/*<Footer></Footer>*/}
