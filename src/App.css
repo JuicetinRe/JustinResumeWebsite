@@ -1,8 +1,44 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Outfit', sans-serif;
+  background: #000;
+  background: linear-gradient(-45deg, #404db9, #737abb, #6d6f96);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .App-link {
   color: #61dafb;
+}
+
+/* Form styling */
+.morseFormContainer {
+  background-color: rgb(174, 180, 185);
+  border:5px solid rgb(0, 0, 0);
+  font-size: 1.5em;
+  margin: 0.25em;
+}
+.morseForm {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.formItem {
+  margin: 5px 5px;
 }
