@@ -27,6 +27,24 @@
   color: #61dafb;
 }
 
+p {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
 /* Form styling */
 .morseFormContainer {
   background-color: rgb(174, 180, 185);

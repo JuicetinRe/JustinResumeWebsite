@@ -15,6 +15,8 @@ const Navbars = () => {
         >
           <Nav.Link href="/about">About Me</Nav.Link>
           <Nav.Link href="/resume">Resume</Nav.Link>
+          <Nav.Link href="https://www.juicetinapparel.com/">Juicetin Apparel</Nav.Link>
+          <Nav.Link href="/contact">Contact Me</Nav.Link>
           <NavDropdown title="Funstuff" id="navbarScrollingDropdown">
             <NavDropdown.Item href="/MorseCalculator">Morse Calculator</NavDropdown.Item>
             <NavDropdown.Item href="#action3">Maplestory calc</NavDropdown.Item>
