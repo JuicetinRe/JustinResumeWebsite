@@ -3,7 +3,7 @@ import React from 'react';
 
 const Navbars = () => {
     return ( 
-    <Navbar className = "py-3 py-lg-3" bg="dark" variant = "dark" expand="lg">
+    <Navbar className = "py-3 py-lg-3" bg="black" variant = "dark" expand="lg">
     <Container fluid>
       <Navbar.Brand href="/">Justin Le</Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />
@@ -17,7 +17,7 @@ const Navbars = () => {
           <Nav.Link href="/resume">Resume</Nav.Link>
           <Nav.Link href="https://www.juicetinapparel.com/">Juicetin Apparel</Nav.Link>
           <Nav.Link href="/contact">Contact Me</Nav.Link>
-          <NavDropdown title="Funstuff" id="navbarScrollingDropdown">
+          <NavDropdown title="Projects" id="navbarScrollingDropdown">
             <NavDropdown.Item href="/MorseCalculator">Morse Calculator</NavDropdown.Item>
             <NavDropdown.Item href="#action3">Maplestory calc</NavDropdown.Item>
             <NavDropdown.Divider />
