@@ -55,6 +55,7 @@ const MorseCalculator = () => {
     }
     return ( 
         <div className="container">
+            <h1>Morse Code Solver</h1>
             <div className="morseFormContainer">
                 <Form className = "morseForm">
                     <h3 class = "formItem">Please input morse input as ".-/../.-.//../--.", line breaks are each letter, double line break is a new word.</h3>

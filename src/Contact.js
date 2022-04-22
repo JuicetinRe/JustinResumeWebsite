@@ -26,29 +26,28 @@ class Contact extends React.Component {
       }
   
     handleSubmit (event) {
-        const templateId = 'template_ussdsrj';
+        const templateId = 'template_cshya31';
         this.sendFeedback(templateId, {message:this.state.comment, from_name: this.state.name, reply_to: this.state.email});
         document.getElementByID("myForm").reset();
     }
     
-      sendFeedback (templateId, variables) {
-        window.emailjs.send(
-          'service_dhcb53o', templateId,
-          variables
-          ).then(res => {
-            alert('Email successfully sent!')
-          })
-          // Handle errors here however you like, or use a React error boundary
-          .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
-      }
+    sendFeedback (templateId, variables) {
+      window.emailjs.send(
+        'service_oxlahem', templateId,
+        variables
+        ).then(res => {
+          alert('Email successfully sent!')
+        })
+        // Handle errors here however you like, or use a React error boundary
+        .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
+    }
   
     render() {
       return (
         <div>
-            <h1 className = "tabHeader">Contact</h1>
             <div className="formGrid">
                 <div className="form">
-                    <h1> Questions, comments, concerns?</h1>
+                    <h1> Want to contact me?</h1>
                     <form id = "myForm" onSubmit = {this.handleSubmit}>
                         <label> 
                             Name:
@@ -62,7 +61,7 @@ class Contact extends React.Component {
                         </label>
 
                         <label> 
-                            School E-mail: 
+                            Email:
                             <input 
                             name = "email" 
                             type = "text"
@@ -71,8 +70,6 @@ class Contact extends React.Component {
                             required
                             />
                         </label>
-
-
                         <label> 
                             Comments: 
                             <textarea
@@ -82,7 +79,6 @@ class Contact extends React.Component {
                             required
                             />
                         </label>
-
                         <input type="button" value="Submit" onClick={this.handleSubmit}/>
                     </form>
                 </div>
